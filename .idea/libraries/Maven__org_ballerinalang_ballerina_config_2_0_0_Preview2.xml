@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ballerinalang:ballerina-config:2.0.0-Preview2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/ballerina-config/2.0.0-Preview2/ballerina-config-2.0.0-Preview2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/ballerina-config/2.0.0-Preview2/ballerina-config-2.0.0-Preview2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/ballerina-config/2.0.0-Preview2/ballerina-config-2.0.0-Preview2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
