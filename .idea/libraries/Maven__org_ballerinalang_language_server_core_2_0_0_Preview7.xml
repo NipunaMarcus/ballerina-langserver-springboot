@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ballerinalang:language-server-core:2.0.0-Preview7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/language-server-core/2.0.0-Preview7/language-server-core-2.0.0-Preview7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/language-server-core/2.0.0-Preview7/language-server-core-2.0.0-Preview7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ballerinalang/language-server-core/2.0.0-Preview7/language-server-core-2.0.0-Preview7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

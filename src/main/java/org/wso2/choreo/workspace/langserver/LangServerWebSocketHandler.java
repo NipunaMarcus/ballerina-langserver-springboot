@@ -28,16 +28,22 @@ public class LangServerWebSocketHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         System.out.println("new connection established - " + session.getId() + " from: " + session.getRemoteAddress());
-        languageServer = new BallerinaLanguageServer();
-        messageHandler = new WebSocketMessageHandler();
-        WebSocketLauncherBuilder<ExtendedLanguageClient> builder = new WebSocketLauncherBuilder<>();
-        builder
-                .setSession(session)
-                .setMessageHandler(messageHandler)
-                .setLocalService(languageServer)
-                .setRemoteInterface(ExtendedLanguageClient.class);
-        Launcher<ExtendedLanguageClient> extendedLanguageClientLauncher = builder.create();
-        languageServer.connect(extendedLanguageClientLauncher.getRemoteProxy());
+        try{
+            languageServer = new BallerinaLanguageServer();
+            messageHandler = new WebSocketMessageHandler();
+            WebSocketLauncherBuilder<ExtendedLanguageClient> builder = new WebSocketLauncherBuilder<>();
+            builder
+                    .setSession(session)
+                    .setMessageHandler(messageHandler)
+                    .setLocalService(languageServer)
+                    .setRemoteInterface(ExtendedLanguageClient.class);
+            Launcher<ExtendedLanguageClient> extendedLanguageClientLauncher = builder.create();
+            languageServer.connect(extendedLanguageClientLauncher.getRemoteProxy());
+        } catch (Throwable th) {
+            th.printStackTrace();
+            throw th;
+        }
+
     }
 
     @Override
